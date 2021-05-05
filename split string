@@ -1,0 +1,25 @@
+public class SplitString  
+{   
+public static void main(String args[])   
+{    
+String s = "Life,is,your,creation";  
+String[] stringarray = s.split(",");    
+for(int i=0; i< stringarray.length; i++)  
+{   
+System.out.println(stringarray[i]);  
+}  
+}   
+}  
+
+output:
+
+C:\Users\ibmjfsdb106>javac SplitString.java
+
+C:\Users\ibmjfsdb106>java SplitString
+Life,is,your,creation
+Life
+is
+your
+creation
+
+C:\Users\ibmjfsdb106>
