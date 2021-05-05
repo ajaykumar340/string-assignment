@@ -1,0 +1,34 @@
+import java.util.*;   
+class Palindrome 
+{  
+   public static void main(String args[])  
+   {  
+      String original, reverse = "";  
+      Scanner in = new Scanner(System.in);   
+      System.out.println("Enter a string/number to check if it is a palindrome");  
+      original = in.nextLine();   
+      int length = original.length();   
+      for ( int i = length - 1; i >= 0; i-- )  
+         reverse = reverse + original.charAt(i);  
+      if (original.equals(reverse))  
+         System.out.println("Entered string/number is a palindrome.");  
+      else  
+         System.out.println("Entered string/number isn't a palindrome.");   
+   }  
+}  
+
+output:
+
+C:\Users\ibmjfsdb106>javac Palindrome.java
+
+C:\Users\ibmjfsdb106>java Palindrome
+Enter a string/number to check if it is a palindrome
+madam
+Entered string/number is a palindrome.
+
+C:\Users\ibmjfsdb106>java Palindrome
+Enter a string/number to check if it is a palindrome
+sir
+Entered string/number isn't a palindrome.
+
+C:\Users\ibmjfsdb106>
